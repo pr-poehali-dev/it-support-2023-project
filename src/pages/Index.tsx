@@ -164,7 +164,7 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="hover-scale border-border/50 bg-card/50 backdrop-blur" style={{ animationDelay: `${index * 0.1}s` }}>
+                <Card key={index} className="hover-glow hover-scale border-border/50 bg-card/50 backdrop-blur" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader>
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
                       <Icon name={service.icon as any} size={32} className="text-white" />
@@ -201,7 +201,7 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {pricingPlans.map((plan, index) => (
-                <Card key={index} className={`relative hover-scale ${plan.popular ? 'gradient-border shadow-2xl scale-105' : 'border-border/50'}`}>
+                <Card key={index} className={`relative hover-glow hover-scale ${plan.popular ? 'gradient-border shadow-2xl scale-105' : 'border-border/50'}`}>
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-sm font-semibold">
                       Популярный
@@ -361,7 +361,7 @@ export default function Index() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">Контакты</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <Card className="text-center hover-scale bg-card/50 backdrop-blur border-border/50">
+                <Card className="text-center hover-glow hover-scale bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="pt-6">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-4">
                       <Icon name="Phone" size={28} className="text-white" />
@@ -371,7 +371,7 @@ export default function Index() {
                     <p className="text-foreground/70">+7 (800) 555-35-35</p>
                   </CardContent>
                 </Card>
-                <Card className="text-center hover-scale bg-card/50 backdrop-blur border-border/50">
+                <Card className="text-center hover-glow hover-scale bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="pt-6">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-4">
                       <Icon name="Mail" size={28} className="text-white" />
@@ -381,7 +381,7 @@ export default function Index() {
                     <p className="text-foreground/70">support@techsupport.pro</p>
                   </CardContent>
                 </Card>
-                <Card className="text-center hover-scale bg-card/50 backdrop-blur border-border/50">
+                <Card className="text-center hover-glow hover-scale bg-card/50 backdrop-blur border-border/50">
                   <CardContent className="pt-6">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-4">
                       <Icon name="MapPin" size={28} className="text-white" />
