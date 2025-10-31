@@ -134,21 +134,36 @@ export default function Index() {
         <section className="relative py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 animate-pulse" style={{ animationDuration: '3s' }}></div>
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center animate-fade-in">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                IT-поддержка нового поколения
-              </h1>
-              <p className="text-xl md:text-2xl text-foreground/80 mb-8">
-                Современные решения для вашего бизнеса. Быстро, надёжно, профессионально.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button onClick={() => scrollToSection('request')} size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8">
-                  Получить консультацию
-                  <Icon name="ArrowRight" size={20} className="ml-2" />
-                </Button>
-                <Button onClick={() => scrollToSection('services')} size="lg" variant="outline" className="text-lg px-8 border-primary/50 hover:bg-primary/10">
-                  Наши услуги
-                </Button>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+              <div className="text-center lg:text-left animate-fade-in">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                  IT-поддержка нового поколения
+                </h1>
+                <p className="text-xl md:text-2xl text-foreground/80 mb-8">
+                  Современные решения для вашего бизнеса. Быстро, надёжно, профессионально.
+                </p>
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                  <Button onClick={() => scrollToSection('request')} size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8">
+                    Получить консультацию
+                    <Icon name="ArrowRight" size={20} className="ml-2" />
+                  </Button>
+                  <Button onClick={() => scrollToSection('services')} size="lg" variant="outline" className="text-lg px-8 border-primary/50 hover:bg-primary/10">
+                    Наши услуги
+                  </Button>
+                </div>
+              </div>
+              <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-secondary/30 to-accent/30 mix-blend-overlay"></div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80" 
+                    alt="IT команда за работой"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/80 to-transparent h-32"></div>
+                </div>
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary to-secondary rounded-2xl blur-3xl opacity-50"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-secondary to-accent rounded-2xl blur-3xl opacity-50"></div>
               </div>
             </div>
           </div>
