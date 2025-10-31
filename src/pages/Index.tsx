@@ -35,6 +35,27 @@ const services = [
     description: 'Комплексное подключение офиса к сети и настройка инфраструктуры',
     features: ['Сетевая архитектура', 'Wi-Fi', 'VPN', 'Телефония'],
     price: 'от 10 000 ₽'
+  },
+  {
+    icon: 'Mail',
+    title: 'Настройка почтовых сервисов',
+    description: 'Настройка корпоративной почты и почтовых серверов',
+    features: ['Exchange/Mail', 'Антиспам', 'Синхронизация', 'Безопасность'],
+    price: 'от 3 000 ₽'
+  },
+  {
+    icon: 'FileText',
+    title: 'Настройка офисных программ',
+    description: 'Установка и настройка офисного ПО для эффективной работы',
+    features: ['MS Office', '1C', 'CRM системы', 'Лицензирование'],
+    price: 'от 1 500 ₽'
+  },
+  {
+    icon: 'Monitor',
+    title: 'Удалённая поддержка',
+    description: 'Оперативная техническая поддержка через интернет',
+    features: ['24/7 доступ', 'Решение проблем', 'Консультации', 'Обновления'],
+    price: 'от 1 000 ₽'
   }
 ];
 
@@ -177,7 +198,7 @@ export default function Index() {
                 Полный спектр IT-услуг для вашего бизнеса
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <Card key={index} className="hover-glow hover-scale border-border/50 bg-card/50 backdrop-blur" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader>
